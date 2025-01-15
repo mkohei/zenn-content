@@ -3,7 +3,7 @@ title: "Terraform で Google Identity Platform マルチテナントのユーザ
 emoji: "🧱"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["googlecloud", "identityplatform", "terraform"]
-published: false
+published: true
 ---
 
 Google Identity Platform では、プロジェクト単位でユーザーのサインアップやアカウント削除を制限できます。しかし、マルチテナント環境で複数のテナントを運用する場合、プロジェクトレベルの設定がテナントには反映されず、テナント側でユーザー登録や削除が許可されてしまうという問題があります。さらに、Google Cloud Console や Terraform の `google_identity_platform_tenant` には、テナント単位でサインアップやアカウント削除を制御する設定項目がありません。
